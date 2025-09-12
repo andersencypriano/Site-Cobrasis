@@ -5,7 +5,7 @@ import HamburgerMenu from "../ui/buttons/HamburgerMenu";
 import Logo from "../common/Logo";
 
 export default function Header() {
-  let isMobile = useIsMobile();
+  const isMobile = useIsMobile();
   return (
     <div className="w-full">
         <div className="container mx-auto flex md:justify-between items-center p-4">
