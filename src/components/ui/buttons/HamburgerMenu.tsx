@@ -6,7 +6,7 @@ export default function HamburgerMenu() {
   return (
     <>
       <button 
-        className="flex items-center justify-center w-10 h-10 bg-gray-300 rounded-md cursor-pointer"
+        className="flex items-center w-10 h-10 cursor-pointer"
         onClick={() => {}}
       >
         <MenuIcon/>
