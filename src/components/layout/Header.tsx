@@ -8,8 +8,8 @@ export default function Header() {
   const isMobile = useIsMobile();
   
   return (
-    <div className="w-full fixed top-0 left-0 right-0 z-50 md:h-[auto]">
-        <div className="relative h-20 container mx-auto p-4 z-10 md:flex md:items-center md:justify-between">
+    <div className="w-full fixed top-0 left-0 right-0 z-50 md:h-[auto] md:top-8 ">
+        <div className="relative h-20 container mx-auto p-4 z-10 md:flex md:items-center md:justify-between md:bg-red-50/50 md:rounded-lg">
             {/* Mobile menu - only show on mobile after hydration */}
             <div className="md:hidden absolute top-1/2 -translate-y-1/2">
               {isMobile && <HamburgerMenu />}
