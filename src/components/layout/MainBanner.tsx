@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function MainBanner() {
   return (
-    <div className="w-full h-screen bg-linear-to-r from-emerald-500 via-teal-500 to-cyan-500 flex items-center">
+    <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-600 via-blue-500 to-green-400 text-white p-10 pt-32">
       <div className="container mx-auto pt-[10rem] md:flex md:items-center md:justify-between">
-      <div className="w-1/2 drop-shadow-xl">
+        <div className="w-1/2 drop-shadow-xl">
           <Image
             src="/assets/images/digital-tablet-screen-smart-tech.png"
             width={600}
@@ -21,14 +21,16 @@ export default function MainBanner() {
             único ambiente. Mais eficiência e resultados na recuperação de
             crédito, com praticidade e segurança.
           </p>
-          <button
-            type="button"
-            className="text-white bg-gradient-to-r from-blue-800 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 cursor-pointer"
-          >
-            Solicite uma demonstração
-          </button>
+          <div className="flex gap-4">
+            <button className="px-6 py-3 bg-yellow-400 text-black font-semibold rounded-2xl shadow-lg hover:bg-yellow-300 transition">
+              Testar Gratuitamente
+            </button>
+            <button className="px-6 py-3 border border-white rounded-2xl hover:bg-white hover:text-purple-600 transition">
+              Agendar Demonstração
+            </button>
+          </div>
         </div>
-        
+
       </div>
     </div>
   );
