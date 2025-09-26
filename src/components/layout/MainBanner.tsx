@@ -22,7 +22,7 @@ export default function MainBanner() {
             crédito, com praticidade e segurança.
           </p>
           <div className="md:flex gap-4">
-            <button className="mb-5 w-full px-6 py-3 bg-yellow-400 text-black font-semibold rounded-2xl shadow-lg hover:bg-yellow-300 transition cursor-pointer">
+            <button className="mb-5 md:mb-0 w-full px-6 py-3 bg-yellow-400 text-black font-semibold rounded-2xl shadow-lg hover:bg-yellow-300 transition cursor-pointer">
               Testar Gratuitamente
             </button>
             <button className="w-full px-6 py-3 border border-white rounded-2xl ont-semibold hover:bg-white hover:text-black transition cursor-pointer">
