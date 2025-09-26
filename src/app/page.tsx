@@ -1,6 +1,7 @@
 'use client'
 import MainBanner from "@/components/layout/MainBanner";
-import { Banknote, BarChart3, Briefcase, ChevronDown, Handshake, Headphones, TrendingUp } from "lucide-react";
+import { Banknote, BarChart3, Briefcase, Building, Building2, ChevronDown, Factory, GraduationCap, Handshake, Headphones, ShoppingCart, Stethoscope, TrendingUp } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Home() {
@@ -49,6 +50,41 @@ export default function Home() {
               </p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Segmentos */}
+      <section id="segmentos" className="py-20 bg-white">
+        <div className="px-3 md:px-0 container mx-auto text-center mb-12">
+          <h2 className="text-3xl font-bold text-black">Segmentos de Atuação</h2>
+          <p className="text-gray-700 mt-4 max-w-2xl mx-auto">Nosso CRM é flexível e pode ser aplicado em diferentes áreas de negócio, oferecendo soluções sob medida para cada segmento.</p>
+        </div>
+        <div className="px-3 md:px-0 container mx-auto grid md:grid-cols-2 gap-1 items-center">
+          {/* Segmentos */}
+          <div className="grid grid-cols-2 gap-6">
+            {[
+              { icon: <Building2 className="w-10 h-10 text-purple-600" />, title: "Instituições Financeiras" },
+              { icon: <ShoppingCart className="w-10 h-10 text-green-600" />, title: "Varejo" },
+              { icon: <Factory className="w-10 h-10 text-blue-600" />, title: "Indústrias" },
+              { icon: <Building className="w-10 h-10 text-yellow-600" />, title: "Imobiliárias" },
+              { icon: <Stethoscope className="w-10 h-10 text-pink-600" />, title: "Saúde" },
+              { icon: <GraduationCap className="w-10 h-10 text-indigo-600" />, title: "Educação" },
+            ].map((seg, i) => (
+              <div key={i} className="p-6 rounded-2xl shadow-lg bg-gradient-to-br from-blue-50 via-purple-50 to-green-50 hover:scale-105 transition">
+                <div className="mb-4 flex justify-center">{seg.icon}</div>
+                <h3 className="font-semibold text-lg text-center text-gray-800">{seg.title}</h3>
+              </div>
+            ))}
+          </div>
+          {/* Ilustração */}
+          <div className="flex justify-center">
+            <Image
+              src="/assets/images/dashboard-user-panel-template.png"
+              width={600}
+              height={449}
+              alt="Picture of the author"
+            />
+          </div>
         </div>
       </section>
 
@@ -136,7 +172,7 @@ export default function Home() {
 
       {/* Contato */}
       <section id="contato" className="py-20">
-        <div className="max-w-4xl mx-auto text-center mb-12">
+        <div className="px-3 md:px-0 max-w-4xl mx-auto text-center mb-12">
           <h2 className="text-3xl font-bold">Entre em Contato</h2>
           <p className="text-gray-700 mt-4">Preencha o formulário abaixo e nossa equipe retornará em breve.</p>
         </div>
