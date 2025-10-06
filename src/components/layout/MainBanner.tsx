@@ -1,16 +1,12 @@
 import Image from "next/image";
+import { Video } from "../ui/video";
 
 export default function MainBanner() {
   return (
     <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-600 via-blue-500 to-green-400 text-white p-10 pt-32">
-      <div className="container mx-auto md:flex md:pt-[10rem] md:items-center md:justify-between md:flex-row">
+      <div className="container mx-auto md:flex md:pt-[7rem] md:items-center md:justify-between md:flex-row">
         <div className="none mb-4 md:w-1/2 drop-shadow-xl md:block">
-          <Image
-            src="/assets/images/digital-tablet-screen-smart-tech.png"
-            width={600}
-            height={449}
-            alt="Picture of the author"
-          />
+          <Video/>
         </div>
         <div className="md:w-1/2">
           <h1 className="text-2xl md:text-5xl bold text-cyan-950 mb-4">

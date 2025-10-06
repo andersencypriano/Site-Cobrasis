@@ -114,6 +114,15 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="container mx-auto flex justify-center p-10">
+        <Image
+          src="/assets/images/Bringing-Agreements-Tagline-Logo.webp"
+          width={413}
+          height={109}
+          alt="Picture of the author"
+        />
+      </section>
+
       <section id="faq" className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto text-center mb-12">
           <h2 className="text-3xl font-bold">Perguntas Frequentes</h2>
