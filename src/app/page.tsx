@@ -1,29 +1,13 @@
 'use client'
+import Quotes from "@/components/common/Quotes";
+import Faq from "@/components/layout/Faq";
 import MainBanner from "@/components/layout/MainBanner";
 import { Banknote, BarChart3, Briefcase, Building, Building2, ChevronDown, Factory, GraduationCap, Handshake, Headphones, ShoppingCart, Stethoscope, TrendingUp } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
 export default function Home() {
-  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
-  const faqs = [
-    {
-      question: "Posso testar gratuitamente?",
-      answer: "Sim, você pode iniciar um teste gratuito sem necessidade de cartão.",
-    },
-    {
-      question: "O CRM é seguro?",
-      answer: "Todos os dados são criptografados e seguem padrões de segurança bancária.",
-    },
-    {
-      question: "Funciona para qualquer porte de empresa?",
-      answer: "Sim, ele foi projetado para pequenas, médias e grandes empresas.",
-    },
-  ];
 
-  const toggleFAQ = (index: number) => {
-    setOpenFAQ(openFAQ === index ? null : index);
-  };
 
 
   return (
@@ -127,23 +111,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto text-center mb-12">
           <h2 className="text-3xl font-bold">Perguntas Frequentes</h2>
         </div>
-        <div className="max-w-3xl mx-auto space-y-4 px-6">
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="p-4 bg-white rounded-xl shadow-md cursor-pointer border border-gray-200 hover:shadow-lg transition "
-              onClick={() => toggleFAQ(index)}
-            >
-              <div className="flex justify-between items-center">
-                <h3 className="font-semibold text-gray-800">{faq.question}</h3>
-                <ChevronDown className={`w-5 h-5 transform transition-transform ${openFAQ === index ? "rotate-180 text-purple-600" : "text-gray-500"}`} />
-              </div>
-              {openFAQ === index && (
-                <p className="mt-3 text-gray-700 text-sm">{faq.answer}</p>
-              )}
-            </div>
-          ))}
-        </div>
+        <Faq />
       </section>
 
       {/* Depoimentos */}
@@ -151,21 +119,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto text-center mb-12">
           <h2 className="text-3xl font-bold">O que nossos clientes dizem</h2>
         </div>
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
-          {[
-            "Aumentamos em 40% nossa taxa de recuperação em 3 meses!",
-            "O sistema é prático e intuitivo. Organizou todo nosso processo.",
-            "Segurança e eficiência: recuperamos dívidas sem complicações.",
-          ].map((quote, i) => (
-            <div
-              key={i}
-              className="p-6 rounded-2xl shadow-md bg-gradient-to-br from-purple-100 to-blue-100 hover:scale-105 transition"
-            >
-              <p className="text-gray-800 italic mb-4">“{quote}”</p>
-              <span className="font-semibold">Cliente satisfeito</span>
-            </div>
-          ))}
-        </div>
+        <Quotes />
       </section>
 
 
