@@ -1,7 +1,7 @@
 import { ISolucoes } from "@/interfaces/ISolucoes";
-import { Activity, ChartLine, ChartNoAxesCombined, Columns4, MonitorCheck, SquareKanban, TrendingUp } from "lucide-react";
+import { ChartLine, ChartNoAxesCombined, Columns4, MonitorCheck, SquareKanban, TrendingUp } from "lucide-react";
 
-export let solucoes: ISolucoes[] = [
+export const solucoes: ISolucoes[] = [
   { icon: <ChartNoAxesCombined className="w-10 h-10 text-black" />, title: "CRM Especializado em Cobrança e Vendas", desc: "Gestão completa de carteiras, leads e negociações. Automatize rotinas, atribua metas e monitore resultados em tempo real.", items: ['Workflows inteligentes por perfil de cliente;', 'Alertas e agendamentos automáticos;', 'Histórico completo de interações e movimentações;', 'Painel de produtividade individual e por equipe.'] },
 
   { icon: <Columns4 className="w-10 h-10 text-black" />, title: "Emissão Automatizada de Boletos", desc: "Elimine erros e reduza retrabalho com emissão e baixa automática", items: ['Geração e registro automático de boletos;','Segunda via com atualização de juros e multa;', 'Retorno CNAB e integração bancária via API;', 'Total integração com DocuSign e instituições financeiras.'] },

@@ -1,6 +1,6 @@
 import { IFaq } from "@/interfaces/IFaq";
 
-export let faqs: IFaq[] = [
+export const faqs: IFaq[] = [
     {
         question: "Posso testar gratuitamente?",
         answer: "Sim, você pode iniciar um teste gratuito sem necessidade de cartão.",
