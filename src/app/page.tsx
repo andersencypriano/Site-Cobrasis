@@ -8,6 +8,8 @@ import Image from "next/image";
 import { useState } from "react";
 import Solucoes from "@/components/layout/Solucoes";
 
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
 export default function Home() {
 
 
@@ -64,11 +66,10 @@ export default function Home() {
           </div>
           {/* Ilustração */}
           <div className="flex justify-center">
-            <Image
-              src="/assets/images/dashboard-user-panel-template.png"
-              width={600}
-              height={449}
-              alt="Picture of the author"
+            <DotLottieReact
+              src="/assets/images/dashboard.lottie"
+              loop
+              autoplay
             />
           </div>
         </div>
