@@ -9,6 +9,7 @@ import { useState } from "react";
 import Solucoes from "@/components/layout/Solucoes";
 
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import PaymentsList from "@/components/layout/PaymentsList";
 
 export default function Home() {
 
@@ -18,26 +19,20 @@ export default function Home() {
     <>
       <MainBanner />
       <section id="beneficios" className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto text-center mb-12">
-          <h2 className="text-3xl font-bold">Benefícios do CRM</h2>
-        </div>
-        <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto px-6">
-          {[
-            "Automação de cobranças inteligentes",
-            "Relatórios em tempo real",
-            "Histórico completo de clientes",
-            "Segurança de dados garantida",
-          ].map((benefit, i) => (
-            <div
-              key={i}
-              className="p-6 rounded-2xl shadow-lg"
-            >
-              <h3 className="font-semibold text-lg mb-2">{benefit}</h3>
-              <p className="text-sm text-gray-600">
-                Simplifique processos e aumente sua eficiência.
-              </p>
+        <div className="container mx-auto">
+          <div className="max-w-6xl mx-auto text-center mb-12">
+            <h2 className="text-3xl font-bold">Pagamentos Integrados</h2>
+          </div>
+          <div className="md:flex md:items-center">
+            <div className="md:w-1/2">
+              <DotLottieReact
+                src="/assets/images/payments.lottie"
+                loop
+                autoplay
+              />
             </div>
-          ))}
+            <PaymentsList />
+          </div>
         </div>
       </section>
 
