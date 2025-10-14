@@ -2,19 +2,14 @@
 import Quotes from "@/components/common/Quotes";
 import Faq from "@/components/layout/Faq";
 import MainBanner from "@/components/layout/MainBanner";
-import { Banknote, BarChart3, Briefcase, Building, Building2, ChevronDown, Factory, GraduationCap, Handshake, Headphones, ShoppingCart, Stethoscope, TrendingUp } from "lucide-react";
-import { solucoes } from "@/seeds/Solucoes";
+import { Building, Building2, ChartNoAxesCombined, ChartPie, Factory, FileChartColumn, GraduationCap, ShoppingCart, Stethoscope } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
 import Solucoes from "@/components/layout/Solucoes";
 
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import PaymentsList from "@/components/layout/PaymentsList";
 
 export default function Home() {
-
-
-
   return (
     <>
       <MainBanner />
@@ -39,19 +34,17 @@ export default function Home() {
       {/* Segmentos */}
       <section id="segmentos" className="py-20 bg-white">
         <div className="px-3 md:px-0 container mx-auto text-center mb-12">
-          <h2 className="text-3xl font-bold text-black">Segmentos de Atuação</h2>
-          <p className="text-gray-700 mt-4 max-w-2xl mx-auto">Nosso CRM é flexível e pode ser aplicado em diferentes áreas de negócio, oferecendo soluções sob medida para cada segmento.</p>
+          <h2 className="text-3xl font-bold text-black">ERP INTEGRADO</h2>
+          <p className="text-gray-700 mt-4 max-w-2xl mx-auto">Tenha o controle total do seu negócio em um só lugar.
+          </p>
         </div>
         <div className="px-3 md:px-0 container mx-auto grid md:grid-cols-2 gap-1 items-center">
           {/* Segmentos */}
           <div className="grid grid-cols-2 gap-6">
             {[
-              { icon: <Building2 className="w-10 h-10 text-purple-600" />, title: "Instituições Financeiras" },
-              { icon: <ShoppingCart className="w-10 h-10 text-green-600" />, title: "Varejo" },
-              { icon: <Factory className="w-10 h-10 text-blue-600" />, title: "Indústrias" },
-              { icon: <Building className="w-10 h-10 text-yellow-600" />, title: "Imobiliárias" },
-              { icon: <Stethoscope className="w-10 h-10 text-pink-600" />, title: "Saúde" },
-              { icon: <GraduationCap className="w-10 h-10 text-indigo-600" />, title: "Educação" },
+              { icon: <FileChartColumn className="w-10 h-10 text-purple-600" />, title: "Gestão de vendas, contratos e cobranças" },
+              { icon: <ChartNoAxesCombined className="w-10 h-10 text-green-600" />, title: "Controle de fluxo de caixa e DRE" },
+              { icon: <ChartPie className="w-10 h-10 text-blue-600" />, title: "Relatórios de inadimplência e aging de carteira." }
             ].map((seg, i) => (
               <div key={i} className="p-6 rounded-2xl shadow-lg bg-gradient-to-br from-blue-50 via-purple-50 to-green-50 hover:scale-105 transition">
                 <div className="mb-4 flex justify-center">{seg.icon}</div>
