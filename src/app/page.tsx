@@ -8,6 +8,7 @@ import Solucoes from "@/components/layout/Solucoes";
 
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import PaymentsList from "@/components/layout/PaymentsList";
+import Security from "@/components/layout/Security";
 
 export default function Home() {
   return (
@@ -31,7 +32,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Segmentos */}
+      {/* ERP */}
       <section id="segmentos" className="py-20 bg-white">
         <div className="px-3 md:px-0 container mx-auto text-center mb-12">
           <h2 className="text-3xl font-bold text-black">ERP INTEGRADO</h2>
@@ -71,6 +72,27 @@ export default function Home() {
         <Solucoes />
       </section>
 
+      {/* Segurança e Infraestrutura */}
+      <section id="segmentos" className="py-20 bg-white">
+        <div className="px-3 md:px-0 container mx-auto text-center mb-12">
+          <h2 className="text-3xl font-bold text-black">Segurança e Infraestrutura</h2>
+          <p className="text-gray-700 mt-4 max-w-2xl mx-auto">Sua operação em um ambiente seguro, estável e em conformidade com a LGPD.
+          </p>
+        </div>
+        <div className="px-3 md:px-0 container mx-auto flex items-center">
+          {/* Ilustração */}
+          <div className="md:w-1/2">
+            <DotLottieReact
+              src="/assets/images/security.lottie"
+              loop
+              autoplay
+            />
+          </div>
+          {/* Segmentos */}
+          <Security/>
+        </div>
+      </section>
+
       <section className="container mx-auto flex justify-center p-10">
         <Image
           src="/assets/images/Bringing-Agreements-Tagline-Logo.webp"
@@ -97,8 +119,13 @@ export default function Home() {
 
 
       <section className="py-20 bg-gradient-to-r from-purple-700 via-blue-600 to-green-500 text-white text-center">
-        <h2 className="text-4xl font-bold mb-6">Transforme sua recuperação de dívidas hoje mesmo</h2>
-        <p className="mb-8">Aumente sua taxa de recuperação com a tecnologia que impulsiona resultados.</p>
+        <h2 className="text-4xl font-bold mb-6">Nosso Compromisso</h2>
+        <p className="">Na Cobrasis, tecnologia é estratégia de crescimento.
+          Desenvolvemos sistemas que impulsionam a eficiência, a previsibilidade e a rentabilidade da sua operação.
+        </p>
+        <p className="mb-8">
+          Mais do que software, entregamos inteligência que gera resultado.
+        </p>
         <div className="flex gap-4 justify-center">
           <button className="px-6 py-3 bg-yellow-400 text-black font-semibold rounded-2xl shadow-lg hover:bg-yellow-300 transition cursor-pointer">
             Falar com Especialista
