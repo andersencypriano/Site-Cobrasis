@@ -1,9 +1,15 @@
 import Image from "next/image";
 
-export default function Logo() {
+interface LogoProps {
+  width: number;
+  height: number;
+}
+
+
+export default function Logo({width, height}: LogoProps) {
   return (
     <>
-      <Image src="/assets/images/logo-cobrasis.svg" alt="Logo" width={180} height={48} />
+      <Image src="/assets/images/cobrasis-logo.png" alt="Logo" width={width} height={height} />
     </>
   );
 }

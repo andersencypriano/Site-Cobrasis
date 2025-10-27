@@ -7,7 +7,7 @@ export default function Footer() {
       {/* Rodapé */}
       <footer className="bg-gray-900 text-gray-300">
         <div className="pt-6 px-3 container mx-auto">
-          <Logo />
+          <Logo width={100} height={111} />
           <div className="mt-4 gap-3 grid mb-4 md:justify-between md:grid-cols-2">
             <div className="">
               <div className="">
