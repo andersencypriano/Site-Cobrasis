@@ -9,7 +9,7 @@ export default function HamburgerMenu() {
         className="flex items-center w-10 h-10 cursor-pointer"
         onClick={() => {}}
       >
-        <MenuIcon/>
+        <MenuIcon color="white"/>
       </button>
     </>
   );

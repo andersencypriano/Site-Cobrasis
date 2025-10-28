@@ -5,10 +5,10 @@ export default function Menu() {
   const isScrolled = useIsScrolled();
   return (
     <div className="flex items-center gap-4">
-      <Link href="/" className={`${isScrolled ? 'md:text-neutral-50' : 'md:text-neutral-800'}`}>Home</Link>
-      <Link href="/sobre-nos" className={`${isScrolled ? 'md:text-neutral-50' : 'md:text-neutral-800'}`}>Sobre Nós</Link>
-      <Link href="/solucoes" className={`${isScrolled ? 'md:text-neutral-50' : 'md:text-neutral-800'}`}>Soluções</Link>
-      <Link href="/contato" className={`${isScrolled ? 'md:text-neutral-50' : 'md:text-neutral-800'}`}>Contato</Link>
+      <Link href="/" className="text-white">Home</Link>
+      <Link href="/sobre-nos" className="text-white">Sobre Nós</Link>
+      <Link href="/solucoes" className="text-white">Soluções</Link>
+      <Link href="/contato" className="text-white">Contato</Link>
     </div>
   );
 }
