@@ -3,7 +3,7 @@ import { securityList } from "@/seeds/SecurityList";
 export default function Security() {
   return (
 
-    <div className="grid md:grid-cols-2 gap-8 md:max-w-4xl mx-auto px-6">
+    <div className="grid md:grid-cols-2 gap-8 md:max-w-4xl mx-auto px-2 md:px-6">
       {securityList.map((payOption, i) => (
         <div
           key={i}
