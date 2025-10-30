@@ -7,7 +7,6 @@ import Logo from "../common/Logo";
 
 export default function Header() {
   const isMobile = useIsMobile();
-  const isScrolled = useIsScrolled();
 
   return (
     <div className="w-full fixed top-0 left-0 right-0 z-50 bg-gray-900 md:h-[auto] ">
