@@ -13,7 +13,7 @@ export default function Drawer() {
 
   return (
     <>
-      <div className={`fixed w-full h-full p-4 transition-all duration-300  bg-gray-900/95 z-40 pt-32 ${isOpen ? drawer.open : drawer.close}`} id="overlay">
+      <div className={`fixed w-full h-full p-4 transition-all duration-300  bg-gray-900 z-40 pt-32 ${isOpen ? drawer.open : drawer.close}`} id="overlay">
         <div className="flex justify-end mb-8">
           <button className="cursor-pointer" onClick={onOpen}>
             <X color="white" />

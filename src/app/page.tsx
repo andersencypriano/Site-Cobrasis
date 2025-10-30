@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <MainBanner />
-      <section id="beneficios" className="py-20 bg-gray-50">
+      <section id="pagamentos" className="py-20 bg-gray-50">
         <div className="container mx-auto">
           <div className="max-w-6xl mx-auto text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold">Pagamentos Integrados</h2>
@@ -33,7 +33,7 @@ export default function Home() {
       </section>
 
       {/* ERP */}
-      <section id="segmentos" className="py-20 bg-white">
+      <section id="erp" className="py-20 bg-white">
         <div className="px-3 md:px-0 container mx-auto text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-black">ERP INTEGRADO</h2>
           <p className="text-gray-700 mt-4 max-w-2xl mx-auto">Tenha o controle total do seu negócio em um só lugar.
@@ -65,7 +65,7 @@ export default function Home() {
       </section>
 
       {/* soluções */}
-      <section id="servicos" className="py-20 bg-gradient-to-r from-purple-50 via-blue-50 to-green-50">
+      <section id="solucoes" className="py-20 bg-gradient-to-r from-purple-50 via-blue-50 to-green-50">
         <div className="max-w-6xl mx-auto text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold">Soluções</h2>
         </div>
@@ -73,7 +73,7 @@ export default function Home() {
       </section>
 
       {/* Segurança e Infraestrutura */}
-      <section id="segmentos" className="py-20 bg-white">
+      <section id="seguranca" className="py-20 bg-white">
         <div className="px-3 md:px-0 container mx-auto text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-black">Segurança e Infraestrutura</h2>
           <p className="text-gray-700 mt-4 max-w-2xl mx-auto">Sua operação em um ambiente seguro, estável e em conformidade com a LGPD.

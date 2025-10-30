@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Drawer from "@/components/ui/Drawer";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,6 +15,9 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+
+
 
 export const metadata: Metadata = {
   title: "Cobrasis",
@@ -31,6 +35,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-100`}
       >
         <Drawer />
+        
         <Header />
         {children}
         <Footer />

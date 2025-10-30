@@ -1,6 +1,5 @@
 "use client";
 import { useIsMobile } from "@/hooks/useIsMobile";
-import { useIsScrolled } from "@/utils/IsScrolled";
 import Menu from "./Menu";
 import HamburgerMenu from "../ui/buttons/HamburgerMenu";
 import Logo from "../common/Logo";

@@ -1,7 +1,6 @@
 import { IMenu } from "@/interfaces/IMenu";
-import { useIsScrolled } from "@/utils/IsScrolled";
+import scrollToSection from "@/utils/ScrollToSection";
 import Link from "next/link";
-import { use } from "react";
 import useDrawer from "../../../store/UseDrawerStore";
 
 
@@ -13,12 +12,17 @@ export default function Menu({direction = 'row'}: IMenu) {
     row: 'flex-row'
   }
 
+  const { closeMenu } = useDrawer();
+
   return (
     <div className={`flex ${menuStats[direction]} gap-4 `}>
-      <Link href="/" className="text-white">Home</Link>
-      <Link href="/" className="text-white colum">Sobre Nós</Link>
-      <Link href="/" className="text-white">Soluções</Link>
-      <Link href="/" className="text-white">Contato</Link>
+      <Link href="/" className="text-white" onClick={(e) => {scrollToSection(e); closeMenu(); }}>Home</Link>
+      <Link href="#pagamentos" className="text-white colum" onClick={(e) => {scrollToSection(e); closeMenu(); }}>Pagamentos</Link>
+      <Link href="#erp" className="text-white" onClick={(e) => {scrollToSection(e); closeMenu(); }}>ERP</Link>
+      <Link href="#solucoes" className="text-white" onClick={(e) => {scrollToSection(e); closeMenu(); }}>Soluções</Link>
+      <Link href="#seguranca" className="text-white" onClick={(e) => {scrollToSection(e); closeMenu(); }}>Segurança</Link>
+      <Link href="#faq" className="text-white" onClick={(e) => {scrollToSection(e); closeMenu(); }}>FAQ</Link>
+      <Link href="#contato" className="text-white" onClick={(e) => {scrollToSection(e); closeMenu(); }}>Contato</Link>
     </div>
   );
 }
