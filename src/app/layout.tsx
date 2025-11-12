@@ -4,7 +4,6 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Drawer from "@/components/ui/Drawer";
-import { useIsMobile } from "@/hooks/useIsMobile";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

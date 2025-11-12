@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Video } from "../ui/video";
 
 export default function MainBanner() {

@@ -2,13 +2,14 @@
 import Quotes from "@/components/common/Quotes";
 import Faq from "@/components/layout/Faq";
 import MainBanner from "@/components/layout/MainBanner";
-import { Building, Building2, ChartNoAxesCombined, ChartPie, Factory, FileChartColumn, GraduationCap, ShoppingCart, Stethoscope } from "lucide-react";
+import { ChartNoAxesCombined, ChartPie, FileChartColumn } from "lucide-react";
 import Image from "next/image";
 import Solucoes from "@/components/layout/Solucoes";
 
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import PaymentsList from "@/components/layout/PaymentsList";
 import Security from "@/components/layout/Security";
+import FormContact from "@/components/forms/FormContact";
 
 export default function Home() {
   return (
@@ -139,14 +140,7 @@ export default function Home() {
           <h2 className="text-2xl md:text-3xl font-bold">Entre em Contato</h2>
           <p className="text-gray-700 mt-4">Preencha o formulário abaixo e nossa equipe retornará em breve.</p>
         </div>
-        <form className="max-w-3xl mx-auto grid gap-6 px-6">
-          <input type="text" placeholder="Nome" className="p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400" />
-          <input type="email" placeholder="E-mail" className="p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400" />
-          <textarea placeholder="Mensagem" rows={4} className="p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
-          <button type="submit" className="px-6 py-3 bg-yellow-400 text-black font-semibold rounded-2xl shadow-lg hover:bg-yellow-300 transition cursor-pointer">
-            Enviar
-          </button>
-        </form>
+        <FormContact />
       </section>
     </>
   );

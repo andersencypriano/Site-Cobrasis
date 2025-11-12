@@ -1,5 +1,5 @@
 import { ISolucoes } from "@/interfaces/ISolucoes";
-import { ChartLine, ChartNoAxesCombined, Columns4, MonitorCheck, SquareKanban, TrendingUp } from "lucide-react";
+import { ChartLine, ChartNoAxesCombined, Columns4, MonitorCheck, TrendingUp } from "lucide-react";
 
 export const solucoes: ISolucoes[] = [
   { icon: <ChartNoAxesCombined className="w-10 h-10 text-pink-600" />, title: "CRM Especializado em Cobrança e Vendas", desc: "Gestão completa de carteiras, leads e negociações. Automatize rotinas, atribua metas e monitore resultados em tempo real.", items: ['Workflows inteligentes por perfil de cliente;', 'Alertas e agendamentos automáticos;', 'Histórico completo de interações e movimentações;', 'Painel de produtividade individual e por equipe.'] },
