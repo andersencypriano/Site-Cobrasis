@@ -12,9 +12,11 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
     message,
 }) => (
   <div>
-    <h1>Nome: {name}!</h1>
-    <h1>E-mail: {email}!</h1>
-    <h1>Mensagem: {message}!</h1>
+    <p>Nome: {name}</p>
+    <p>E-mail: {email}</p>
+    <p>Mensagem: {message}</p>
+    <p>Data: {new Date().toLocaleDateString()}</p>
+    <p>Hora: {new Date().toLocaleTimeString()}</p>
   </div>
 );
 

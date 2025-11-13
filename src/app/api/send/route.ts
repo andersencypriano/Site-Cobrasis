@@ -27,9 +27,9 @@ export async function POST(request: Request) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: process.env.RESEND_FROM_EMAIL ?? 'andersen.cypriano@gmail.com',
+      from: process.env.RESEND_FROM_EMAIL ?? 'delivered@resend.dev',
       to: [process.env.RESEND_TO_EMAIL ?? 'andersen.cypriano@gmail.com'],
-      subject: 'Nova mensagem de contato',
+      subject: '[Nova mensagem de contato]',
       react: createElement(EmailTemplate, {
         name,
         email,
@@ -38,6 +38,7 @@ export async function POST(request: Request) {
     });
 
     if (error) {
+      console.error('Erro do Resend:', error);
       return NextResponse.json(
         { error: error.message ?? 'Falha ao enviar e-mail.' },
         { status: 502 },
