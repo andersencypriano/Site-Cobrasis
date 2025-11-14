@@ -2,9 +2,12 @@
 import { X } from "lucide-react";
 import useDrawer from "../../../store/UseDrawerStore";
 import Menu from "../layout/Menu";
+import scrollToSection from "@/utils/ScrollToSection";
 
 export default function Drawer() {
-  const { isOpen, onOpen } = useDrawer();
+  const { isOpen, onOpen, closeMenu } = useDrawer();
+
+  
 
   const drawer = {
     open: 'translate-x-0',
@@ -24,9 +27,9 @@ export default function Drawer() {
         </div>
         <div className="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
           <div className="mt-3 rounded-lg sm:mt-0">
-            <button className="px-6 py-3 bg-yellow-400 text-black font-semibold rounded-2xl shadow-lg hover:bg-yellow-300 transition cursor-pointer">
+            <a href="#especialista" onClick={(e) => {scrollToSection(e); closeMenu(); }} className="px-6 py-3 bg-yellow-400 text-black font-semibold rounded-2xl shadow-lg hover:bg-yellow-300 transition cursor-pointer">
               Falar com Especialista
-            </button>
+            </a>
           </div>
         </div>
       </div>

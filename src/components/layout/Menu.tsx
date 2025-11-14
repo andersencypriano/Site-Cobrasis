@@ -16,7 +16,7 @@ export default function Menu({direction = 'row'}: IMenu) {
 
   return (
     <div className={`flex ${menuStats[direction]} gap-4 `}>
-      <Link href="/" className="text-white" onClick={(e) => {scrollToSection(e); closeMenu(); }}>Home</Link>
+      {/* <Link href="/" className="text-white" onClick={(e) => {scrollToSection(e); closeMenu(); }}>Home</Link> */}
       <Link href="#pagamentos" className="text-white colum" onClick={(e) => {scrollToSection(e); closeMenu(); }}>Pagamentos</Link>
       <Link href="#erp" className="text-white" onClick={(e) => {scrollToSection(e); closeMenu(); }}>ERP</Link>
       <Link href="#solucoes" className="text-white" onClick={(e) => {scrollToSection(e); closeMenu(); }}>Soluções</Link>

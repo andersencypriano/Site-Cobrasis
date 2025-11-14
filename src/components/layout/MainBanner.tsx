@@ -19,7 +19,7 @@ export default function MainBanner() {
           <p className="text-[1rem] mb:text-2xl text-cyan-950 mb-6">
             A Cobrasis é uma fintech especializada em automação de cobrança, CRM financeiro e inteligência operacional, ajudando empresas a recuperar créditos, aumentar eficiência e reduzir inadimplência com tecnologia de ponta.
           </p>
-          <div className="md:flex gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <a href="#demo"  className="mb-5 md:mb-0 w-full px-6 py-3 bg-yellow-400 text-black text-center font-semibold rounded-2xl shadow-lg hover:bg-yellow-300 transition cursor-pointer" onClick={(e) => {scrollToSection(e); closeMenu(); }}>
               Solicitar Demonstração
             </a>
