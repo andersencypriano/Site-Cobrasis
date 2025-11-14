@@ -9,7 +9,7 @@ type Inputs = {
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
-export default function FormContact() {
+export default function FormExpert() {
   const [status, setStatus] = useState<FormStatus>("idle");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const {
@@ -24,7 +24,7 @@ export default function FormContact() {
     setErrorMessage(null);
 
     try {
-      const response = await fetch("/api/send/contact", {
+      const response = await fetch("/api/send/expert", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -53,7 +53,7 @@ export default function FormContact() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="max-w-3xl mx-auto grid gap-4 px-6"
+      className="w-full md:w-1/2 mx-auto grid gap-4 px-6"
     >
       <input
         type="text"

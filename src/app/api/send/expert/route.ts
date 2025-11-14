@@ -1,7 +1,7 @@
 import { createElement } from 'react';
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
-import { EmailTemplate } from '../../../components/forms/emails/contact-template';
+import { EmailTemplate } from '../../../../components/forms/templateEmails/expert-template';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -28,8 +28,8 @@ export async function POST(request: Request) {
   try {
     const { data, error } = await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL ?? 'delivered@resend.dev',
-      to: [process.env.RESEND_TO_EMAIL ?? 'andersen.cypriano@gmail.com'],
-      subject: '[Nova mensagem de contato]',
+      to: [process.env.RESEND_TO_EMAIL ?? 'contato@cobrasis.com.br'],
+      subject: '[ESPECIALISTA - Cobrasis]',
       react: createElement(EmailTemplate, {
         name,
         email,

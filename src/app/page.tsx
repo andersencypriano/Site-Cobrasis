@@ -10,6 +10,9 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import PaymentsList from "@/components/layout/PaymentsList";
 import Security from "@/components/layout/Security";
 import FormContact from "@/components/forms/FormContact";
+import ExpertContact from "@/components/forms/FormExpert";
+import FormExpert from "@/components/forms/FormExpert";
+import FormDemo from "@/components/forms/FormDemo";
 
 export default function Home() {
   return (
@@ -33,6 +36,7 @@ export default function Home() {
         </div>
       </section>
 
+      
       {/* ERP */}
       <section id="erp" className="py-20 bg-white">
         <div className="px-3 md:px-0 container mx-auto text-center mb-12">
@@ -62,6 +66,26 @@ export default function Home() {
               autoplay
             />
           </div>
+        </div>
+      </section>
+
+      {/* Demonstração */}
+      <section id="demo" className="py-20 bg-gray-50">
+        <div className="px-3 md:px-0 container mx-auto text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-black">Solicite uma demonstração</h2>
+          <p className="text-gray-700 mt-4 max-w-2xl mx-auto">Conheça cada funcionalidade com a orientação de um especialista e avalie como ela pode resolver os desafios da sua operação.
+          </p>
+        </div>
+        <div className="px-3 md:px-0 container mx-auto md:flex items-center">
+          {/* Ilustração */}
+          <div className="w-full md:w-1/2">
+            <DotLottieReact
+              src="/assets/images/demo.lottie"
+              loop
+              autoplay
+            />
+          </div>
+          <FormDemo/>
         </div>
       </section>
 
@@ -116,6 +140,26 @@ export default function Home() {
           <h2 className="text-2xl md:text-3xl font-bold">O que nossos clientes dizem</h2>
         </div>
         <Quotes />
+      </section>
+
+      {/* Especialista */}
+      <section id="especialista" className="py-20 bg-white">
+        <div className="px-3 md:px-0 container mx-auto text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-black">Fale com um especialista</h2>
+          <p className="text-gray-700 mt-4 max-w-2xl mx-auto">Converse com um especialista e descubra como nosso CRM pode transformar a gestão de clientes da sua empresa, oferecendo mais controle, produtividade e resultados.
+          </p>
+        </div>
+        <div className="px-3 md:px-0 container mx-auto md:flex items-center">
+          {/* Ilustração */}
+          <div className="w-full md:w-1/2">
+            <DotLottieReact
+              src="/assets/images/expert.lottie"
+              loop
+              autoplay
+            />
+          </div>
+          <FormExpert/>
+        </div>
       </section>
 
 
