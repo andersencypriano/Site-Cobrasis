@@ -24,7 +24,7 @@ export default function FormExpert() {
     setErrorMessage(null);
 
     try {
-      const response = await fetch("/api/send/expert", {
+      const response = await fetch("https://api-resend-cb5u.vercel.app/api/send/expert", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

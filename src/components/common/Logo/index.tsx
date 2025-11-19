@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { BASE_PATH } from "@/utils/constants";
 
 interface LogoProps {
   width: number;
@@ -9,7 +10,7 @@ interface LogoProps {
 export default function Logo({width, height}: LogoProps) {
   return (
     <>
-      <Image src="/assets/images/cobrasis-logo.png" alt="Logo" width={width} height={height} />
+      <Image src={`${BASE_PATH}/assets/images/cobrasis-logo.png`} alt="Logo" width={width} height={height} />
     </>
   );
 }

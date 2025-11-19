@@ -24,7 +24,7 @@ export default function FormDemo() {
     setErrorMessage(null);
 
     try {
-      const response = await fetch("/api/send/demo", {
+      const response = await fetch("https://api-resend-cb5u.vercel.app/api/send/demo", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

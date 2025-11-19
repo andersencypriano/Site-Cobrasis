@@ -24,7 +24,7 @@ export default function FormContact() {
     setErrorMessage(null);
 
     try {
-      const response = await fetch("/api/send/contact", {
+      const response = await fetch("https://api-resend-cb5u.vercel.app/api/send/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -12,6 +12,7 @@ import Security from "@/components/layout/Security";
 import FormContact from "@/components/forms/FormContact";
 import FormExpert from "@/components/forms/FormExpert";
 import FormDemo from "@/components/forms/FormDemo";
+import { BASE_PATH } from "@/utils/constants";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
           <div className="md:flex md:items-center">
             <div className="md:w-1/2">
               <DotLottieReact
-                src="/assets/images/payments.lottie"
+                src={`${BASE_PATH}/assets/images/payments.lottie`}
                 loop
                 autoplay
               />
@@ -60,7 +61,7 @@ export default function Home() {
           {/* Ilustração */}
           <div className="flex justify-center mt-7 md:mt-0">
             <DotLottieReact
-              src="/assets/images/dashboard.lottie"
+              src={`${BASE_PATH}/assets/images/dashboard.lottie`}
               loop
               autoplay
             />
@@ -79,7 +80,7 @@ export default function Home() {
           {/* Ilustração */}
           <div className="w-full mb-10 md:w-1/2 md:mb-0">
             <DotLottieReact
-              src="/assets/images/demo.lottie"
+              src={`${BASE_PATH}/assets/images/demo.lottie`}
               loop
               autoplay
             />
@@ -107,7 +108,7 @@ export default function Home() {
           {/* Ilustração */}
           <div className="w-full md:w-1/2">
             <DotLottieReact
-              src="/assets/images/security.lottie"
+              src={`${BASE_PATH}/assets/images/security.lottie`}
               loop
               autoplay
             />
@@ -119,7 +120,7 @@ export default function Home() {
 
       <section className="container mx-auto flex justify-center p-10">
         <Image
-          src="/assets/images/Bringing-Agreements-Tagline-Logo.webp"
+          src={`${BASE_PATH}/assets/images/Bringing-Agreements-Tagline-Logo.webp`}
           width={413}
           height={109}
           alt="Picture of the author"
@@ -152,7 +153,7 @@ export default function Home() {
           {/* Ilustração */}
           <div className="w-full mb-10 md:w-1/2 md:mb-0">
             <DotLottieReact
-              src="/assets/images/expert.lottie"
+              src={`${BASE_PATH}/assets/images/expert.lottie`}
               loop
               autoplay
             />

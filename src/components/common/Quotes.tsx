@@ -7,9 +7,9 @@ export default function Quotes() {
     }
 
     const quotesList: ClientQuote[] = [
-        { name: "Cliente satisfeito", quote: "Aumentamos em 40% nossa taxa de recuperação em 3 meses!" },
-        { name: "Cliente satisfeito", quote: "Aumentamos em 40% nossa taxa de recuperação em 3 meses!" },
-        { name: "Cliente satisfeito", quote: "Aumentamos em 40% nossa taxa de recuperação em 3 meses!" },
+        { name: "Cliente satisfeito", quote: "O suporte é rápido e toda a equipe entende as necessidades do nosso segmento." },
+        { name: "Cliente satisfeito", quote: "A plataforma trouxe transparência total para o acompanhamento dos projetos." },
+        { name: "Cliente satisfeito", quote: "Desde a implantação, ganhamos produtividade e conseguimos focar no crescimento do negócio." },
     ]
 
     return (
@@ -21,7 +21,7 @@ export default function Quotes() {
                         className="p-6 rounded-2xl shadow-md bg-gradient-to-br from-purple-100 to-blue-100 hover:scale-105 transition"
                     >
                         <p className="text-gray-800 italic mb-4">“{quote.quote}”</p>
-                        <span className="font-semibold">{quote.name}</span>
+                        {/* <span className="font-semibold">{quote.name}</span> */}
                     </div>
                 ))}
             </div>
